@@ -1,829 +1,525 @@
 
-@media (min-width: 568px) and (max-width: 880px)  {
-  
-    body {
-        background-color: hsl(0, 0%, 94%);
-        font-family: sans-serif;           
-    }
-    
-    .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 100vh;
-        width: 100vw;
-        
-    }
-    
-    .conteudo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;        
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 100px;
-        background-color: hsl(0, 0%, 100%);
-        height: auto;
-        width: 100%;  
-        padding: 30px; 
-                    
-    }
-    
-    .caixa-labels{
-        display: flex;
-        flex-direction: row;
-        justify-content: start;        
-    }
-    
-    .caixa-labels label{
-        width: 100%;
-        font-weight: 700;
-        font-size: 18px;
-        letter-spacing: 2px;
-        color: hsl(0, 1%, 44%);
-
-    }
-    
-    .caixa-inputs {
-        display: flex;
-        flex-direction: row;
-        justify-content:space-evenly;
-   }
-    
-    .caixa-inputs input {
-        width: 150px;
-        height: 60px;
-        border: 1px solid hsl(0, 1%, 44%);
-        border-radius: 8px;
-        padding-left: 10px;
-        font-size: 25px;
-        font-weight: 800;
-        margin-right: auto;
-        
-    }
-
-    .caixa-inputs input:hover{
-        border-color: hsl(259, 100%, 65%);
-        cursor: pointer;        
-    }
-
-    .caixa-inputs input:focus{
-        outline-color:  hsl(0, 0%, 86%);      
-    }
-
-
-    .caixa-alerta{
-        display: flex;
-        flex-direction: row;
-        justify-content: start;  
-        margin-top: 10px;            
-    }
-
-    .caixa-alerta label{
-        width: 100%;       
-        font-size: 10px; 
-        color: hsl(0, 100%, 67%);
-        visibility: hidden;     
-    }
-    
-    .caixa-img {        
-        width: 100%;
-        height: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center; 
-        
-    }
-    
-    .linha {
-        
-        border: 1px solid hsl(0, 0%, 94%);
-        width: 100%;
-        
-    }
-    
-    .img-arrow{
-        position: absolute;  
-        background-image: url("images/icon-arrow.svg");
-        background-repeat: no-repeat;
-        background-color: hsl(259, 100%, 65%);
-        background-position: center;
-        border: 1px solid none;
-        border-radius: 50%;
-        height: 80px;    
-        width: 80px;    
-        
-        
-    }
-    
-    
-    .caixa-numeros { 
-        width: 100%; 
-        height: auto;       
-        display: flex;
-        flex-direction: column;
-        line-height: 60px;        
-    }
-
-    
-
-    .caixa-numeros .label1{  
-        font-size: 56px;
-        color: hsl(259, 100%, 65%);
-        letter-spacing: -5px;
-        font-weight: 800i;
-        font-family: 'Poppins', sans-serif;
-        width: auto;       
-        
-        
-    }
-
-    .caixa-numeros span{
-        width: auto;
-        font-size: 56px;
-        color: hsl(0, 0%, 8%);
-        font-weight: 800i;
-        font-family: 'Poppins', sans-serif;
-    }   
-    
-   
-   
-    .attribution { font-size: 11px; text-align: center;}
-    .attribution a { color: hsl(228, 45%, 44%); }
-  
-    
-  }
-
-
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (portait)
-  ##Screen = B/w 481px to 767px
-*/
-
-@media (min-width: 320px) and (max-width: 480px)  {
-  
-    body {
-        background-color: hsl(0, 0%, 94%);
-        font-family: sans-serif;           
-    }
-    
-    .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 100vh;
-        width: 100vw;
-        padding: 0;    
-                    
-    }
-    
-    .conteudo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;        
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 100px;
-        background-color: hsl(0, 0%, 100%);
-        height: auto;
-        width: 100%;  
-        padding: 30px;             
-    }
-    
-    .caixa-labels{
-        display: flex;
-        flex-direction: row;
-        justify-content: start;        
-    }
-    
-    .caixa-labels label{
-        width: 100%;
-        font-weight: 700;
-        font-size: 18px;
-        letter-spacing: 2px;
-        color: hsl(0, 1%, 44%);
-
-    }
-    
-    .caixa-inputs {
-        display: flex;
-        flex-direction: row;
-        justify-content:space-evenly;
-   }
-    
-    .caixa-inputs input {
-        width: 90px;
-        height: 60px;
-        border: 1px solid hsl(0, 1%, 44%);
-        border-radius: 8px;
-        padding-left: 10px;
-        font-size: 25px;
-        font-weight: 800;
-        margin-right: auto;
-        
-    }
-
-    .caixa-inputs input:hover{
-        border-color: hsl(259, 100%, 65%);
-        cursor: pointer;        
-    }
-
-    .caixa-inputs input:focus{
-        outline-color:  hsl(0, 0%, 86%);      
-    }
-
-
-    .caixa-alerta{
-        display: flex;
-        flex-direction: row;
-        justify-content: start;  
-        margin-top: 10px;            
-    }
-
-    .caixa-alerta label{
-        width: 100%;       
-        font-size: 6px; 
-        color: hsl(0, 100%, 67%);
-        visibility: hidden;     
-    }
-    
-    .caixa-img {        
-        width: 100%;
-        height: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center; 
-        
-    }
-    
-    .linha {
-        
-        border: 1px solid hsl(0, 0%, 94%);
-        width: 100%;
-        
-    }
-    
-    .img-arrow{
-        position: absolute;  
-        background-image: url("images/icon-arrow.svg");
-        background-repeat: no-repeat;
-        background-color: hsl(259, 100%, 65%);
-        background-position: center;
-        border: 1px solid none;
-        border-radius: 50%;
-        height: 80px;    
-        width: 80px;    
-        
-        
-    }
-    
-    
-    .caixa-numeros { 
-        width: 100%; 
-        height: auto;       
-        display: flex;
-        flex-direction: column;
-        line-height: 60px;        
-    }
-
-    
-
-    .caixa-numeros .label1{  
-        font-size: 56px;
-        color: hsl(259, 100%, 65%);
-        letter-spacing: -5px;
-        font-weight: 800i;
-        font-family: 'Poppins', sans-serif;
-        width: auto;       
-        
-        
-    }
-
-    .caixa-numeros span{
-        width: auto;
-        font-size: 56px;
-        color: hsl(0, 0%, 8%);
-        font-weight: 800i;
-        font-family: 'Poppins', sans-serif;
-    }   
-    
-   
-   
-    .attribution { font-size: 11px; text-align: center;}
-    .attribution a { color: hsl(228, 45%, 44%); }
-  
-    
-  }
-
-
-
-  /* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
-
-@media (min-width: 481px) and (max-width: 767px) {
-  
-    body {
-        background-color: hsl(0, 0%, 94%);
-        font-family: sans-serif;           
-    }
-    
-    .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: auto;
-        width: 100vw;
-        padding: 0;   
-         
-        
-    }
-    
-    .conteudo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;        
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 100px;
-        background-color: hsl(0, 0%, 100%);
-        height: auto;
-        width: 100%;  
-        padding: 30px;             
-    }
-    
-    .caixa-labels{
-        display: flex;
-        flex-direction: row;
-        justify-content: start;        
-    }
-    
-    .caixa-labels label{
-        width: 100%;
-        font-weight: 700;
-        font-size: 18px;
-        letter-spacing: 2px;
-        color: hsl(0, 1%, 44%);
-
-    }
-    
-    .caixa-inputs {
-        display: flex;
-        flex-direction: row;
-        justify-content:space-evenly;
-   }
-    
-    .caixa-inputs input {
-        width: 140px;
-        height: 60px;
-        border: 1px solid hsl(0, 1%, 44%);
-        border-radius: 8px;
-        padding-left: 10px;
-        font-size: 25px;
-        font-weight: 800;
-        margin-right: auto;
-        
-    }
-
-    .caixa-inputs input:hover{
-        border-color: hsl(259, 100%, 65%);
-        cursor: pointer;        
-    }
-
-    .caixa-inputs input:focus{
-        outline-color:  hsl(0, 0%, 86%);      
-    }
-
-
-    .caixa-alerta{
-        display: flex;
-        flex-direction: row;
-        justify-content: start;  
-        margin-top: 10px;            
-    }
-
-    .caixa-alerta label{
-        width: 100%;       
-        font-size: 6px; 
-        color: hsl(0, 100%, 67%);
-        visibility: hidden;     
-    }
-    
-    .caixa-img {        
-        width: 100%;
-        height: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center; 
-        
-    }
-    
-    .linha {
-        
-        border: 1px solid hsl(0, 0%, 94%);
-        width: 100%;
-        
-    }
-    
-    .img-arrow{
-        position: absolute;  
-        background-image: url("images/icon-arrow.svg");
-        background-repeat: no-repeat;
-        background-color: hsl(259, 100%, 65%);
-        background-position: center;
-        border: 1px solid none;
-        border-radius: 50%;
-        height: 80px;    
-        width: 80px;    
-        
-        
-    }
-    
-    
-    .caixa-numeros { 
-        width: 100%; 
-        height: auto;       
-        display: flex;
-        flex-direction: column;
-        line-height: 60px;        
-    }
-
-    
-
-    .caixa-numeros .label1{  
-        font-size: 56px;
-        color: hsl(259, 100%, 65%);
-        letter-spacing: -5px;
-        font-weight: 800i;
-        font-family: 'Poppins', sans-serif;
-        width: auto;       
-        
-        
-    }
-
-    .caixa-numeros span{
-        width: auto;
-        font-size: 56px;
-        color: hsl(0, 0%, 8%);
-        font-weight: 800i;
-        font-family: 'Poppins', sans-serif;
-    }   
-    
-   
-   
-    .attribution { font-size: 11px; text-align: center;}
-    .attribution a { color: hsl(228, 45%, 44%); }
-  
-  }
-
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
  
-/* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
 
-@media (min-width: 768px) and (max-width: 1280px)  {
-  
-    body {
-        background-color: hsl(0, 0%, 94%);
-        font-family: sans-serif;           
+/* CELULARES OK*/ 
+        
+@media (min-width: 340px) and (max-width: 1280px) {
+   
+    @font-face {
+        font-family: "Inter";
+        src: url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Overpass:wght@100&family=Poppins:ital,wght@1,800&display=swap");
     }
+
+   
     
-    .container {
+    .container{
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: center;       
-        height: 100vh;
-        width: 100vw;
-                      
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+        background-color: yellow;      
     }
-    
-    .conteudo {
-        display: flex;
-        flex-direction: column;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 180px;
-        background-color: hsl(0, 0%, 100%);
-        width: 90%;
-        height: 700px;  
-        padding: 50px;                  
-    }
-    
-    .caixa-labels{
-        display: flex;
-        flex-direction: row;
-        justify-content: start;               
-    }
-    
-    .caixa-labels label{
+
+    .principal {
+        margin: 20px;
+        font-size: 15px;
         width: 100%;
-        font-weight: 700;
-        font-size: 18px;
-        letter-spacing: 2px;
-        color: hsl(0, 1%, 44%);         
     }
 
-    
-    
-    .caixa-inputs {
-        display: flex;
-        flex-direction: row;
-        justify-content:space-evenly; 
+    .principal nav ul li a{
+        text-decoration: none;   
     }
 
-    .caixa-inputs input {
-        width: 150px;
-        height: 70px;
-        border: 1px solid  hsl(0, 0%, 86%);
-        border-radius: 8px;
-        padding-left: 20px;
-        font-size: 32px;
-        font-weight: 800;
-        margin-right: auto;        
+    .navegacao{
+        display: none;
     }
 
-    .caixa-inputs input:hover{
-        border-color: hsl(259, 100%, 65%);
-        cursor: pointer;        
-    }
-
-    .caixa-inputs input:focus{
-        outline-color:  hsl(0, 0%, 86%);      
-    }
-
-
-    .caixa-alerta{
-        display: flex;
-        flex-direction: row;
-        justify-content: start;  
-        margin-top: 10px;       
-    }
-
-    .caixa-alerta label{
-        width: 100%;        
-        font-size: 12px; 
-        color: hsl(0, 100%, 67%);
-        visibility: hidden;     
-    }
-    
           
-    .caixa-img {        
-        width: 100%;
-        height: 100px;
+    nav ul {
+        display: flex;    
+        justify-content: start;
+        align-items: center;
+        padding: 0;
+        gap: 25px;             
+    }
+
+
+    nav a{
+        color: hsl(233, 8%, 79%);
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+    }  
+    
+    nav a:hover{
+       color:hsl(5, 85%, 63%);        
+    } 
+
+    .caixa-img{
+        margin-right: auto;
+        
+    }
+
+    .conteudo-central{
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-items: center; 
         
     }
-    
-    .linha {
+
+    .conteudo-central img{
+        display: block;
+        max-width: 100%;
+        height: auto;
         
-        border: 1px solid hsl(0, 0%, 94%);
+        }
+
+   
+    nav li {
+        list-style: none; 
+        ;      
+        
+    }   
+    
+    nav a{
+        text-decoration: none
+    }
+    
+    main{        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .conteudo-central{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .conteudo-central h1{
+        font-family: "Inter", sans-serif; 
+        font-weight: 800;
+    }     
+
+    .caixa-2{
+        margin-top: 20px;       
+        
+    }
+
+    .paragrafo1{
         width: 100%;
+        height: auto;
+        font-family: "Inter", sans-serif; 
+        color: hsl(236, 13%, 42%);
+        font-weight: 400;
+        font-size: 16px;
         
-    }
-    
-    .img-arrow{
-        position: absolute;  
-        background-image: url("images/icon-arrow.svg");
-        background-repeat: no-repeat;
-        background-color: hsl(259, 100%, 65%);
-        background-position: center;
-        border: 1px solid none;
-        border-radius: 50%;
-        height: 80px;    
-        width: 80px;    
+        
+        
+        
         
         
     }
 
-    .img-arrow:hover{
-        background-color:  hsl(0, 0%, 8%);
+    .paragrafo1 a {
+        display: inline-block;
+        color: hsl(36, 100%, 99%);
+        background-color: hsl(5, 85%, 63%);
+        text-decoration: none;
+        padding: 12px;
+        width: 170px;
+        text-align: center;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 4px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        
+    }
+
+    .paragrafo1 a:hover {
+       background-color: hsl(240, 100%, 5%);
+    }
+
+    .conteudo-lateral{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+        width: 100%;
+        background-color:  hsl(240, 100%, 5%);
+        
+        
+    }
+
+    .conteudo-lateral h1{
+        color: hsl(35, 77%, 62%);
+        margin-bottom: 20px;
+    }
+
+    .conteudo-lateral h5{
+        color: hsl(36, 100%, 99%);
+        
+    }
+
+    .conteudo-lateral h5:hover{
+        color: hsl(35, 77%, 62%);
+        cursor: pointer;
+        
+    }
+
+    .caixa-lateral section{
+        margin-bottom: 10px;
+        border-bottom: 1px solid  hsl(233, 8%, 79%);
+        color: hsl(233, 8%, 79%);
+        height: 100px;
+        
+        
+        
+    }
+
+   .artigos{    
+    display: flex;
+    flex-direction: column;    
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    
+    
+   }
+
+   .alinha-artigos{
+    display: flex;
+    align-items: center;
+    
+    
+   }
+
+   .artigos h4{
+    color: hsl(233, 8%, 79%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    
+    
+    
+    
+    } 
+
+    .artigos h6{
+        color:  hsl(240, 100%, 5%);
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        
+        
+        
+    }
+
+    .artigos h6:hover{
+        color:  hsl(5, 85%, 63%);
         cursor: pointer;
     }
-    
-    
-    .caixa-numeros {   
-        width: 100%;
-        height: 300px;
-        display: flex;
-        flex-direction: column;
-        line-height: 75px;         
-    }
 
-    .caixa-numeros .label1{      
-        font-size: 90px;
-        color: hsl(259, 100%, 65%);
-        letter-spacing: 15px;
-        font-weight: 800i;
-        font-family: 'Poppins', sans-serif;
-        width: auto;       
-    }
-
-    .caixa-numeros span{
-        width: auto;
-        font-size: 90px;
-        color: hsl(0, 0%, 8%);
-        font-weight: 800i;
-        font-family: 'Poppins', sans-serif;
+    
+    .artigos p{
+        font-family: "Inter", sans-serif; 
+        color: hsl(236, 13%, 42%);
+        font-weight: 400;
+        font-size: 13px;
         
-    }      
-   
-    .attribution { font-size: 11px; text-align: center;}
-    .attribution a { color: hsl(228, 45%, 44%); }
-  
+        
+        
+    }  
+
+
+
+  .col-7{    
+    
+    height: auto;
+    width: 100%;
     
   }
 
-
-
-
-  /* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
-@media (min-width: 1281px) and (max-width: 1440px) {
-
-  
-    body {
-        background-color: hsl(0, 0%, 94%);
-        font-family: sans-serif;           
-    }
+  .col-5{
+    width: 100%;
+    height: auto;
     
-    .container {       
+    
+
+    
+  }
+
+  .row{
+    margin-bottom: 20px;
+      
+  }
+
+   
+
+   .artigos img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    
+   }
+
+   .caixa-artigos{
+    width: 100%;
+    height: auto;
+   }
+}
+
+   
+
+
+
+  /* DESKTOP */ 
+
+@media (min-width: 1281px) {
+    @font-face {
+        font-family: "Inter";
+        src: url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Overpass:wght@100&family=Poppins:ital,wght@1,800&display=swap");
+    }
+
+   
+    
+    .container{
+        display: grid;
+        place-items: center;
+        
+        
+       
+    }
+
+    .principal {
+        margin: 20px;
+        font-size: 15px;      
+
+    }
+
+    .principal nav ul li a{
+        text-decoration: none;
+     
+    }
+
+    .navegacao{
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
+        gap: 30px;
+    }
+          
+    nav ul {
+        display: flex;    
+        justify-content: start;
         align-items: center;
-     }
+        padding: 0;
+        gap: 25px;    
+              
+    }
+
+
+    nav a{
+        color: hsl(233, 8%, 79%);
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+    }  
     
-    .conteudo {
-        display: flex;
-        flex-direction: column;
-        border-top-left-radius: 25px;
-        border-top-right-radius: 25px;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 180px;
-        background-color: hsl(0, 0%, 100%);
-        padding: 50px; 
-        width: 800px; 
-        height: 600px;
-        margin: 10px;
+    nav a:hover{
+       color:hsl(5, 85%, 63%);        
+    } 
+
+    .caixa-img{
+        margin-right: auto;
         
-        
-    }
-    
-    .caixa-labels{
-        display: flex;
-        flex-direction: row;
-        justify-content: start; 
-        width: 80%;              
-    }
-    
-    .caixa-labels label{
-        width: 100%;
-        font-weight: 700;
-        font-size: 18px;
-        letter-spacing: 2px;
-        color: hsl(0, 1%, 44%);         
     }
 
-    
-    
-    .caixa-inputs {
-        display: flex;
-        flex-direction: row;
-        justify-content:space-evenly;
-        width: 80%; 
-    }
+    .conteudo-central img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+        }
 
-    .caixa-inputs input {
-        width: 150px;
-        height: 70px;
-        border: 1px solid  hsl(0, 0%, 86%);
-        border-radius: 8px;
-        padding-left: 20px;
-        font-size: 32px;
-        font-weight: 800;
-        margin-right: auto;        
-    }
-
-    .cor-placeholder::placeholder {
-        color: hsl(0, 100%, 67%);        
-      }
-
-    .caixa-inputs input:hover{
-        border-color: hsl(259, 100%, 65%);
-        cursor: pointer;        
-    }
-
-    .caixa-inputs input:focus{
-        outline-color:  hsl(0, 0%, 86%);      
-    }
-
-
-    .caixa-alerta{
-        display: flex;
-        flex-direction: row;
-        justify-content: start;  
-        margin-top: 10px; 
-        width: 80%;      
-    }
-
-    .caixa-alerta label{
-        width: 100%;        
-        font-size: 12px; 
-        color: hsl(0, 100%, 67%);
-        visibility: hidden;     
-    }
-    
-          
-    .caixa-img {       
-        width: 100%;
-        height: 50px;
-        display: flex;
-        justify-content: end;
-        align-items: center;         
-    }
-    
-    .linha {        
-        border: 1px solid hsl(0, 0%, 94%);
-        width: 100%;        
-    }
-    
-    .img-arrow{
-        position: absolute;  
-        background-image: url("images/icon-arrow.svg");
-        background-repeat: no-repeat;
-        background-color: hsl(259, 100%, 65%);
-        background-position: center;
-        border: 1px solid none;
-        border-radius: 50%;
-        height: 100px;    
-        width: 100px;   
-    }
-
-    .img-arrow:hover{
-        background-color:  hsl(0, 0%, 8%);
-        cursor: pointer;
-    }
-    
-    
-    .caixa-numeros {   
-        width: 100%;
-        height: 300px;
-        display: flex;
-        flex-direction: column;
-        line-height: 75px;         
-    }
-
-
-    
-    
-    .caixa-numeros .label1{      
-        font-size: 95px;
-        color: hsl(259, 100%, 65%);
-        letter-spacing: 15px;
-        font-weight: 800i;
-        font-family: 'Poppins', sans-serif;
-        width: auto;  
-          
-    }
-
-    .caixa-numeros span{
-        width: auto;
-        font-size: 95px;
-        color: hsl(0, 0%, 8%);
-        font-weight: 800i;
-        font-family: 'Poppins', sans-serif;
-        
-    }      
    
-    .attribution { font-size: 11px; text-align: center;}
-    .attribution a { color: hsl(228, 45%, 44%); }
-  
+    nav li {
+        list-style: none; 
+        ;      
+        
+    }   
     
-  }
+    nav a{
+        text-decoration: none
+    }
+    
+    main{        
+        display: grid;
+        grid-template-areas: 
+        'centro centro lateral'
+        'a a a'
+        ;
+    }
+
+    .conteudo-central{
+        grid-area: centro;
+        margin-right: 20px;
+        
+    }
+
+    .conteudo-central h1{
+        font-family: "Inter", sans-serif;
+        font-weight: 800
+    }
+
+    .caixa-2{
+        display: flex;
+        flex-direction: row;
+
+        margin-top: 20px;        
+        
+    }
+
+    .titulo1{
+        margin-right: 75px;
+        width: 100%;
+    }
+
+    .caixa-paragrafo1{
+        
+        width: 100%;
+        
+    }
+
+    .paragrafo1{
+        
+        margin-right: -100px;
+        
+    }
+    .paragrafo1 p{
+        width: 70%;
+        height: auto;
+        font-family: "Inter", sans-serif; 
+        color: hsl(236, 13%, 42%);
+        font-weight: 400;
+        
+        
+        
+    }
+
+    .paragrafo1 a {
+        display: inline-block;
+        color: hsl(36, 100%, 99%);
+        background-color: hsl(5, 85%, 63%);
+        text-decoration: none;
+        padding: 12px;
+        width: 170px;
+        text-align: center;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 4px;
+        
+    }
+
+    .paragrafo1 a:hover {
+       background-color: hsl(240, 100%, 5%);
+    }
+
+    
 
 
+    
+    .conteudo-lateral{
+        grid-area: lateral;
+        padding: 20px;
+        width: 300px;
+        background-color:  hsl(240, 100%, 5%);
+        
+        
+    }
 
+    .conteudo-lateral h1{
+        color: hsl(35, 77%, 62%);
+        margin-bottom: 20px;
+        
+    }
 
+    .conteudo-lateral h5{
+        color: hsl(36, 100%, 99%);
+        
+    }
 
-/* 
-  ##Device = mobile
-  ##Screen = 568px a 880px paisagem
-*/
+    .conteudo-lateral h5:hover{
+        color: hsl(35, 77%, 62%);
+        cursor: pointer;
+        
+    }
 
+    .caixa-lateral section{
+        margin-bottom: 10px;
+        border-bottom: 1px solid  hsl(233, 8%, 79%);
+        color: hsl(233, 8%, 79%);
+        height: 100px;
+        
+        
+        
+    }
+
+   .artigos{
+    grid-area: a;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;      
+    font-size: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 80px;
+    width: 100%;
+    
+    
+    
+    
+    
+   }
+
+  
+   .artigos img{
+    width: 100%;
+    height: 110px; 
+    
+        
+   }
+
+   .conteudo-artigo{
+    margin-left: -10px;
+   }
 
  
+
+   
+
+   .artigos h4{
+    color: hsl(233, 8%, 79%);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    } 
+
+    .artigos h6{
+        color:  hsl(240, 100%, 5%);
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+    }
+
+    .artigos h6:hover{
+        color:  hsl(5, 85%, 63%);
+        cursor: pointer;
+    }
+
+    .artigos p{
+        font-family: "Inter", sans-serif; 
+        color: hsl(236, 13%, 42%);
+        font-weight: 400;
+        font-size: 15px;
+    }  
+
+}
