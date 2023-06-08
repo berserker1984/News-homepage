@@ -20,20 +20,69 @@
         align-items: center;
         padding-left: 0;
         padding-right: 0;
-        background-color: yellow;      
+        
+        
+       
+        
     }
 
     .principal {
         margin: 20px;
         font-size: 15px;
-        width: 100%;
+        
+        
     }
+
+       
 
     .principal nav ul li a{
         text-decoration: none;   
     }
+    
+    
 
-    .navegacao{
+    
+
+    .sumir-elemento{
+        display: none;
+    }
+
+    
+   
+
+    .exibir-elemento{
+        display: block;
+        position: absolute;       
+        padding: 20px;
+        width: 70%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background-color:  hsl(36, 100%, 99%);
+        
+              
+    }
+
+    .caixa-icone-close{
+       margin-bottom: 80px;
+       margin-left: 85%;  
+    }
+
+     
+
+    .itens-menu a{
+        font-size: 25px;
+        color: hsl(240, 100%, 5%); 
+        font-family: "Inter", sans-serif; 
+        font-weight: 400;
+        line-height: 50px;     
+        
+    }
+
+    
+
+
+    .remover-caixa{
         display: none;
     }
 
@@ -59,6 +108,14 @@
 
     .caixa-img{
         margin-right: auto;
+        
+    }
+
+   
+
+    .caixa-icone{
+        position: relative;
+        margin-left: auto;
         
     }
 
@@ -304,7 +361,15 @@
      
     }
 
-    .navegacao{
+    .caixa-icone{
+        display: none;
+    }
+
+    .caixa-icone-close{
+        display: none;
+    }
+
+    .navegacao-desktop{
         display: flex;
         flex-direction: row;
         gap: 30px;
@@ -321,7 +386,7 @@
 
 
     nav a{
-        color: hsl(233, 8%, 79%);
+        color: hsl(236, 13%, 42%);
         font-family: 'Inter', sans-serif;
         font-weight: 400;
     }  

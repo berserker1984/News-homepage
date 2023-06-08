@@ -38,15 +38,32 @@
           <ul>
             <div class="caixa-img">
               <img src="./assets/images/logo.svg" alt=""> 
-            </div>            
+            </div> 
             
-            <div class="navegacao">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Popular</a></li>
-                <li><a href="#">Trending</a></li>
-                <li><a href="#">Categories</a></li>
+            
+            
+            <div id="icone" class="caixa-icone">
+              <img  onclick="exibeMenu()" src="./assets/images/icon-menu.svg" alt=""> 
+            </div>  
+
+            <div id="menu" class="sumir-elemento">
+                
+                <div id="icone-close" class="caixa-icone-close">
+                  <img onclick="fechaMenu()" src="./assets/images/icon-menu-close.svg" alt=""> 
+                </div> 
+              
+                <div class="itens-menu navegacao-desktop">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">New</a></li>
+                  <li><a href="#">Popular</a></li>
+                  <li><a href="#">Trending</a></li>
+                  <li><a href="#">Categories</a></li>
+                </div>
+
+
             </div>
+
+            
             
           </ul>
         </nav>
